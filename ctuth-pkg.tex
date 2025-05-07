@@ -696,9 +696,10 @@
 \floatstyle{plain}
 % restyle already existing floats
 \restylefloat{figure}
-\restylefloat{table}
+%\restylefloat{table}
 % set up the captions: no indent of captions, no seperator (seperator is handled by {myformat})
-\captionsetup{format=myformat,indent=0pt,labelsep=none,justification=myjustify,font={small},position=below}
+\captionsetup[figure]{format=myformat,indent=0pt,labelsep=none,justification=myjustify,font={small},position=below}
+%\captionsetup[table]{} %TODO
 % float-caption distance
 \abovecaptionskip 8pt plus 3pt minus 1pt
 % graphics allowed: pdf, png, jpg
